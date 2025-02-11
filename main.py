@@ -33,7 +33,7 @@ def aggregateReport(path_to_file):
     charCount = countCharacters(path_to_file)
 
     for char in charCount:
-        if char.isalpha() or char == ' ':
+        if char.isalpha():
             print(f"'{char}': {charCount[char]}")
 
 if __name__ == "__main__":
